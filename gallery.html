@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">
+                <i class="fas fa-images mr-2"></i>Ghibli Gallery
+            </h1>
+            <nav>
+                <a href="index.html" class="text-white hover:text-yellow-200">Back to Creator</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Example saved images (would be populated from localStorage in a real app) -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg" alt="Ghibli Creation" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Mystical Forest</h3>
+                    <p class="text-gray-600 text-sm">Created: 2023-11-15</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                <img src="https://i.imgur.com/Q7YXtYk.png" alt="Ghibli Creation" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Totoro Adventure</h3>
+                    <p class="text-gray-600 text-sm">Created: 2023-11-14</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // In a real implementation, this would load saved images from localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            // const savedImages = JSON.parse(localStorage.getItem('ghibliGallery')) || [];
+            // Render saved images to the grid
+        });
+    </script>
+</body>
+</html>
